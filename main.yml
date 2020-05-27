@@ -1,0 +1,10 @@
+name: workflow 
+on:push
+jobs:
+    build:
+        name:hello action
+        steps:
+            - uses: actions/checkout@v1
+            - uses: ./action
+              with:
+                who-to-greet: "lakshmi"
